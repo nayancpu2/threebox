@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>BOGO Pricing</title>
+    <title>BOGO Pricing - Expandable Boxes</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -12,87 +12,107 @@
 
         <!-- Option 1 -->
         <div class="bogo-option" id="option1">
-            <label>
-                <input type="radio" name="bogo" checked />
-                <div class="bogo-header">
-                    <div>
-                        <strong>1 Unit</strong><span class="discount">10% Off</span><br>
-                        <small>Standard Price</small>
-                    </div>
-                    <div class="price">
-                        <span>$10.00 USD</span>
-                        <small>$24.00 USD</small>
-                    </div>
+            <div class="bogo-header">
+                <strong>1 Unit</strong><span class="discount">10% Off</span><br>
+                <small>Standard Price</small>
+                <div class="price">
+                    <span>$10.00 USD</span>
+                    <small>$24.00 USD</small>
                 </div>
-            </label>
+            </div>
+            <div class="bogo-content">
+                <div class="dropdown-group">
+                    <label>Size:
+                        <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </label>
+                    <label>Colour:
+                        <select>
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Green</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
         </div>
 
         <!-- Option 2 -->
         <div class="bogo-option most-popular" id="option2">
-            <label>
-                <input type="radio" name="bogo" />
-                <div class="bogo-header">
-                    <div>
-                        <strong>2 Unit</strong><span class="discount">20% Off</span><br>
-                    </div>
-                    <div class="price">
-                        <span>$18.00 USD</span>
-                        <small>$24.00 USD</small>
-                    </div>
-                </div>
-
-                <div class="bogo-content">
-                    <div class="dropdown-group">
-                        <label>#1 Size:
-                            <select>
-                                <option>S</option>
-                                <option>M</option>
-                                <option>L</option>
-                            </select>
-                        </label>
-                        <label>Colour:
-                            <select>
-                                <option>Black</option>
-                                <option>Red</option>
-                                <option>Blue</option>
-                            </select>
-                        </label>
-                    </div>
-                    <div class="dropdown-group">
-                        <label>#2 Size:
-                            <select>
-                                <option>S</option>
-                                <option>M</option>
-                                <option>L</option>
-                            </select>
-                        </label>
-                        <label>Colour:
-                            <select>
-                                <option>Colour</option>
-                                <option>Red</option>
-                                <option>Blue</option>
-                            </select>
-                        </label>
-                    </div>
-                </div>
-            </label>
             <div class="most-popular-badge">Most Popular</div>
+            <div class="bogo-header">
+                <strong>2 Unit</strong><span class="discount">20% Off</span><br>
+                <div class="price">
+                    <span>$18.00 USD</span>
+                    <small>$24.00 USD</small>
+                </div>
+            </div>
+            <div class="bogo-content">
+                <div class="dropdown-group">
+                    <label>#1 Size:
+                        <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </label>
+                    <label>Colour:
+                        <select>
+                            <option>Black</option>
+                            <option>Red</option>
+                            <option>Blue</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="dropdown-group">
+                    <label>#2 Size:
+                        <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </label>
+                    <label>Colour:
+                        <select>
+                            <option>Colour</option>
+                            <option>Red</option>
+                            <option>Blue</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
         </div>
 
         <!-- Option 3 -->
         <div class="bogo-option" id="option3">
-            <label>
-                <input type="radio" name="bogo" />
-                <div class="bogo-header">
-                    <div>
-                        <strong>3 Unit</strong><span class="discount">30% Off</span><br>
-                    </div>
-                    <div class="price">
-                        <span>$24.00 USD</span>
-                        <small>$24.00 USD</small>
-                    </div>
+            <div class="bogo-header">
+                <strong>3 Unit</strong><span class="discount">30% Off</span><br>
+                <div class="price">
+                    <span>$24.00 USD</span>
+                    <small>$24.00 USD</small>
                 </div>
-            </label>
+            </div>
+            <div class="bogo-content">
+                <div class="dropdown-group">
+                    <label>Size:
+                        <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </label>
+                    <label>Colour:
+                        <select>
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Green</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
         </div>
 
         <div class="bogo-footer">
