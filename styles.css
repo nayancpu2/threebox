@@ -25,18 +25,13 @@ h2 {
     border-radius: 8px;
     margin-bottom: 15px;
     overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
     position: relative;
 }
 
-.bogo-option input[type="radio"] {
-    display: none;
-}
-
 .bogo-header {
-    display: flex;
-    justify-content: space-between;
     padding: 15px;
-    cursor: pointer;
 }
 
 .bogo-header strong {
@@ -75,13 +70,13 @@ h2 {
 .bogo-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.3s ease, padding 0.3s ease;
     background-color: #f9f9f9;
     padding: 0 15px;
 }
 
-.bogo-option input[type="radio"]:checked ~ .bogo-content {
-    max-height: 300px;
+.bogo-option.expanded .bogo-content {
+    max-height: 500px;
     padding: 15px;
 }
 
