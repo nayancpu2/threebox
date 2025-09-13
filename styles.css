@@ -21,13 +21,12 @@ h2 {
 }
 
 .bogo-option {
-    border: 1px solid #ddd;
+   border: 1px solid #ddd;
     border-radius: 8px;
     margin-bottom: 15px;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    position: relative;
 }
 
 .bogo-header {
@@ -156,4 +155,10 @@ h2 {
     font-size: 10px;
     color: #aaa;
     margin-top: 10px;
+}
+
+.bogo-option:hover,
+.bogo-option:focus-within {
+    border-color: #ff5c7c;
+    box-shadow: 0 0 10px rgba(255, 92, 124, 0.3);
 }
