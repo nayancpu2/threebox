@@ -21,7 +21,8 @@ h2 {
 }
 
 .bogo-option {
-   border: 1px solid #ddd;
+    position: relative; 
+    border: 1px solid #ddd;
     border-radius: 8px;
     margin-bottom: 15px;
     overflow: hidden;
