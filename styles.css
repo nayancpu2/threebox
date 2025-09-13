@@ -31,8 +31,17 @@ h2 {
 }
 
 .bogo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px;
 }
+
+.bogo-header > div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .bogo-header strong {
     font-size: 16px;
