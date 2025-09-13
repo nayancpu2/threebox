@@ -1,11 +1,20 @@
-const boxes = document.querySelectorAll('.box');
+const options = document.querySelectorAll('.bogo-option input[type="radio"]');
+const totalDisplay = document.querySelector('.total strong');
 
-boxes.forEach(box => {
-    box.addEventListener('click', () => {
-        // Collapse all boxes first
-        boxes.forEach(b => b.classList.remove('expanded'));
+const prices = {
+    option1: 10.00,
+    option2: 18.00,
+    option3: 24.00
+};
 
-        // Expand the clicked box
-        box.classList.add('expanded');
+options.forEach(option => {
+    option.addEventListener('change', () => {
+        updateTotal();
     });
 });
+
+function updateTotal() {
+    const selected = document.querySelector('.bogo-option input[type="radio"]:checked');
+    const optionId = selected.closest('.bogo-option').id;
+    totalDisplay.textContent = `$${prices[optionId].toFixed(2)} USD`;
+}
